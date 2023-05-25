@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Biblioteca.Paginas.Principal.Index">
+    <ContentPage.Content>
+        <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Text="Aplicación De Biblioteca By:Ulises Valencia!"
+                   VerticalOptions="Start" 
+                   HorizontalOptions="CenterAndExpand"
+                   Grid.Row="0"/>
+            <StackLayout Grid.Row="1" 
+                         VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="CenterAndExpand">
+                <Button Text="Usuarios" Clicked="Button_Usuario_Clicked"/>
+                <Button Text="Libros" Clicked="Button_Libro_Clicked"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
